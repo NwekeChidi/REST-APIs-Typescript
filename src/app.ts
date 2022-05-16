@@ -11,5 +11,5 @@ const port = config.get<number>('port');
 app.listen(port, () => {
     connect();
     routes(app);
-    logger.info(":>>>>>>>>>> App is running.");
+    logger.info(`:>>>>>>>>>> App is running on port ${port}.`);
 })
