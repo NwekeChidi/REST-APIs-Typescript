@@ -55,5 +55,5 @@ userSchema.methods.comparePassword = async function(pwd: string): Promise<boolea
         .catch((e) => false);
 }
 
-const User = mongoose.model("User", userSchema);
+const User = mongoose.model<UserDocument>("User", userSchema);
 export default User;
